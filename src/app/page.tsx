@@ -1,7 +1,6 @@
 import Link from "next/link";
 import CallToAction from "@/components/CallToAction";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-// import GistEmbed from "../components/Embedd";
 import PostCard from "../components/PostCard";
 
 export default function Home() {
@@ -38,18 +37,13 @@ export default function Home() {
                 <CallToAction />
               </div>
               <div className="max-w-6xl mx-auto p-3 flex flex-col gap-8 py-7">
-                {/* {posts && posts.length > 0 && ( */}
                 <div className="flex flex-col gap-6">
                   <h2 className="text-2xl font-semibold text-center">
                     Recent Posts
                   </h2>
-                  {/* <GistEmbed /> */}
                   <div className="flex flex-wrap gap-4 justify-center">
-                    {/* {posts.map((post)=>( */}
                     <PostCard />
                     <PostCard />
-                    {/* key={post._id} post={post} */}
-                    {/* ))} */}
                   </div>
                   <Link
                     href={"/search"}
@@ -58,7 +52,6 @@ export default function Home() {
                     View all posts
                   </Link>
                 </div>
-                {/* )} */}
               </div>
             </div>
           </MaxWidthWrapper>
