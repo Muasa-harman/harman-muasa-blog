@@ -8,9 +8,9 @@ const PostCard = () => {
   const post = {
     id: 1,
     title: "Data Structures and Algorithms in Python",
-    imageUrl: "https://via.placeholder.com/400x200.png?text=Post+Cover+Image", // Placeholder image URL
+    imageUrl: "", 
     category: "Programming",
-    url: "/post/data-structures-algorithms-python" // Example slug
+    url: "" 
   };
 
   return (
