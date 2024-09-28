@@ -4,13 +4,13 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import PostCard from "../components/PostCard";
 
 export default function Home() {
+
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <div className="flex flex-col gap-6  mx-auto">
         <h3 className="text-3xl font-bold">
           Welcome to My Developer's Playground
         </h3>
-        {/* <h3 className=""></h3> */}
         <p className="text-gray-500 text-xs sm:text-sm">
           Your go-to hub for all things tech! Dive into a world of insightful
           articles, especially on data structures and algorithms, step-by-step
