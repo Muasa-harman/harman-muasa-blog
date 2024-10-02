@@ -50,7 +50,7 @@ const Navbar = () => {
           <nav className="flex items-center justify-evenly">
             {/* <IoMenuSharp className="w-6 h-6"/> */}
             <div className="mr-5 hover:text-slate-800 focus:border-green-500">
-              <Link href="/projects">Projects</Link>
+              <Link href="/projects/">Projects</Link>
             </div>
             <div className="mr-5 hover:text-slate-800 focus:border-green-500">
               <Link href="/about">Canvas Profile</Link>
