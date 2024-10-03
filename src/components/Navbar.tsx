@@ -39,7 +39,7 @@ const Navbar = () => {
             <h3>currentUser</h3>
         {/* //   <Menu /> */}
         {/* ) : ( */}
-          <Link href="/sign-in">
+          <Link href="/signIn">
             <Button className="bg-gradient-to-r focus:outline text-green-600 from-gray-300 via-slate-300 to-gray-100 rounded-lg">
               Sign-In
             </Button>

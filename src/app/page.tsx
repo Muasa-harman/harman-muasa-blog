@@ -33,13 +33,10 @@ export default function Home() {
                 reflections on the latest trends in the tech world. Ready to
                 level up? Let's get started!
               </p>
+                
               <div className="absolute w-28 left-0 -top-20 hidden lg:block">
                 {/* i forgot this div right here in the video, it's purely visual gradient and looks nice */}
                 <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t via-slate-50/50 from-slate-50 h-28" />
-                <Image
-                src={""}
-                  // src="https://avatars.githubusercontent.com/u/123101284?s=400&u=a04dfe5638c3e7c0baa461bfe87c5a4c1ef123c2&v=4"
-                  className="w-fit mb-12 h-10 " alt={"profilePic"} height={300}    width={300}           />
               </div>
               <h1 className="relative w-fit tracking-tight text-balance mt-16 font-bold !leading-tight text-gray-900 text-5xl md:text-6xl lg:text-7xl">
                 <Link
@@ -63,15 +60,15 @@ export default function Home() {
               </p>
 
               <div className="relative mx-auto text-center lg:text-left flex flex-col items-center lg:items-start col-span-2 px-6 lg:px-0">
-                  <Container className="lg:items-end">
-                    <div className="embed-responsive embed-responsive-16by9">
-                      <iframe
-                        className="embed-responsive-item"
-                        src="https://www.youtube.com/embed/kdPxheeDF4g?si=A5CuY8krjjeoVYLi"
-                        allowFullScreen
-                      ></iframe>
-                    </div>
-                  </Container>
+                <Container className="lg:items-end">
+                  <div className="embed-responsive embed-responsive-16by9">
+                    <iframe
+                      className="embed-responsive-item"
+                      src="https://www.youtube.com/embed/kdPxheeDF4g?si=A5CuY8krjjeoVYLi"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+                </Container>
                 <ul className="mt-8 space-y-2 text-left font-medium  items-center sm:items-start">
                   <div className="space-y-2">
                     <li className="flex gap-1.5 items-center text-left">
@@ -106,59 +103,26 @@ export default function Home() {
                 </ul>
               </div>
 
-              <div className="mt-12 flex flex-col sm:flex-row items-center sm:items-start gap-5">
-                <div className="flex -space-x-4">
-                  <img
-                    className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-100"
-                    src="/users/user-1.png"
-                    alt="user image"
-                  />
-                  <img
-                    className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-100"
-                    src="/users/user-2.png"
-                    alt="user image"
-                  />
-                  <img
-                    className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-100"
-                    src="/users/user-3.png"
-                    alt="user image"
-                  />
-                  <img
-                    className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-100"
-                    src="/users/user-4.jpg"
-                    alt="user image"
-                  />
-                  <img
-                    className="inline-block object-cover h-10 w-10 rounded-full ring-2 ring-slate-100"
-                    src="/users/user-5.jpg"
-                    alt="user image"
-                  />
-                </div>
-
-                <div className="flex flex-col justify-between items-center sm:items-start">
-                  <div className="flex gap-0.5">
-                    <Star className="h-4 w-4 text-green-600 fill-green-600" />
-                    <Star className="h-4 w-4 text-green-600 fill-green-600" />
-                    <Star className="h-4 w-4 text-green-600 fill-green-600" />
-                    <Star className="h-4 w-4 text-green-600 fill-green-600" />
-                    <Star className="h-4 w-4 text-green-600 fill-green-600" />
-                  </div>
-
-                  <p>
-                    <span className="font-semibold">1.250</span> happy
-                    programmers
-                  </p>
-                </div>
+              <div className="mt-12 flex flex-col sm:flex-row items-center sm:items-start gap-5">  
               </div>
             </div>
           </div>
 
           <div className="col-span-full lg:col-span-1 w-full flex justify-center px-8 sm:px-16 md:px-0 mt-32 lg:mx-0 lg:mt-20 h-fit">
             <div className="relative md:max-w-xl">
-              <Profile
+            <Container className="lg:items-end">
+                  <div className="embed-responsive embed-responsive-16by9">
+                    <iframe
+                      className="embed-responsive-item"
+                      src="https://www.youtube.com/embed/kdPxheeDF4g?si=A5CuY8krjjeoVYLi"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+                </Container>
+              {/* <Profile
                 className="w-64"
                 imgSrc="https://avatars.githubusercontent.com/u/123101284?s=400&u=a04dfe5638c3e7c0baa461bfe87c5a4c1ef123c2&v=4"
-              />
+              /> */}
             </div>
           </div>
         </MaxWidthWrapper>
