@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const CallToAction = () => {
   return (
@@ -33,10 +34,10 @@ const CallToAction = () => {
       </div> */}
         <Button className="rounded-bl-none bg-gradient-to-r focus:outline from-gray-300 via-slate-500 to-gray-800 rounded-lg text-white p-2 text-black">
           {" "}
-          <a href="/myprojects" target="_blank" rel="noopener noreferrer">
+          <Link href="/myprojects" target="_blank" rel="noopener noreferrer">
             {" "}
             Click to View!!!!! My Javascript/Typescript && django Projects
-          </a>
+          </Link>
         </Button>
     </div>
   );

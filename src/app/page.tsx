@@ -119,10 +119,6 @@ export default function Home() {
                     ></iframe>
                   </div>
                 </Container>
-              {/* <Profile
-                className="w-64"
-                imgSrc="https://avatars.githubusercontent.com/u/123101284?s=400&u=a04dfe5638c3e7c0baa461bfe87c5a4c1ef123c2&v=4"
-              /> */}
             </div>
           </div>
         </MaxWidthWrapper>
@@ -131,18 +127,6 @@ export default function Home() {
       {/* value proposition section */}
       <section className="bg-slate-100 grainy-dark">
         <MaxWidthWrapper className="flex flex-col items-center gap-16 sm:gap-32">
-          <div className="flex flex-col lg:flex-row items-center gap-4 sm:gap-6">
-            <h2 className="order-1 mt-2 tracking-tight text-center text-balance !leading-tight font-bold text-5xl md:text-6xl text-gray-900">
-              What the{" "}
-              <span className="relative px-2">
-                developers{" "}
-                <Icons.underline className="hidden sm:block pointer-events-none absolute inset-x-0 -bottom-6 text-green-500" />
-              </span>{" "}
-              say
-            </h2>
-            <img src="/snake-2.png" className="w-24 order-0 lg:order-2" />
-          </div>
-
           <div className="mx-auto grid max-w-2xl grid-cols-1 px-4 lg:mx-0 lg:max-w-none lg:grid-cols-2 gap-y-16">
             <div className="flex flex-auto flex-col gap-4 lg:pr-8 xl:pr-20">
               <div className="flex gap-0.5 mb-2">
