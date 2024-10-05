@@ -36,7 +36,7 @@ const Navbar = () => {
           {/* )} */}
         </button>
         {/* {currentUser ? ( */}
-            <h3>currentUser</h3>
+            {/* <h3>currentUser</h3> */}
         {/* //   <Menu /> */}
         {/* ) : ( */}
           <Link href="/signIn">
