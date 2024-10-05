@@ -228,6 +228,8 @@ export default function Home() {
                   <div className="lg:ml-16 w-full lg:w-auto lg:max-w-xs bg-green-100 border border-green-300 p-4 text-center rounded-lg animate-slide-up">
                     <p className="text-green-700 font-bold text-lg">
                       Let us chat here!
+                      <br/>
+                      coming Soon
                     </p>
                   </div>
                 </div>

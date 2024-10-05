@@ -7,6 +7,7 @@ import Harman from "../../../public/assets/harman.png";
 import Ecommerce from "../../../public/assets/Ecommerce.png";
 import POS from "../../../public/assets/POS.png";
 import ProjectCard from "@/components/ProjectCard";
+import  Dashboard from "../../../public/assets/Dashboard.png"
  
 const ProjectsPage = () => {
   return (
@@ -15,7 +16,8 @@ const ProjectsPage = () => {
           <div className="flex flex-col gap-6">
             <h2 className="text-2xl font-semibold text-center">Recent Projects</h2>
             <div className="flex flex-wrap gap-4 justify-center">
-                <ProjectCard title={"My blog in Nextjs"} target='_blank' rel='noopenernoreferrer' image={Harman} link={"https://savanna-test-beta.vercel.app/"}/>
+                <ProjectCard title={"Root blog in React and Nodejs"} target='_blank' rel='noopenernoreferrer' image={Harman} link={"https://myportfolioblogapp.onrender.com/"}/>
+                <ProjectCard title={"Data Dashboard"} target='_blank' rel='noopenernoreferrer' image={Dashboard} link={"https://savanna-test-beta.vercel.app/"}/>
                 <ProjectCard title={"Financial Graphs Dashboard"} target='_blank' rel='noopenernoreferrer' image={Finance} link={"https://yala-finance-dashboard-demo.vercel.app/"}/>
                 <ProjectCard title={"E-commerce shop application"} target='_blank' rel='noopenernoreferrer'  image={Ecommerce} link={'https://next-js-ecommerce-bspt103t6-yala-finance-dashboards-projects.vercel.app/'}/>
                 <ProjectCard title={"Hotel Reservation System"} target='_blank' rel='noopenernoreferrer'  image={Hotel} link={"https://hotel-reservation-app-uesu.onrender.com/"}/>
