@@ -17,10 +17,10 @@ const CallToAction = () => {
           </div>
         </Container>
 
-        <h2 className="text-2xl text-black">
+        <h2 className="text-2xl text-white">
           Want to learn more about Javascript: Typescript? && Python?
         </h2>
-        <p className="text-gray-500 my-2 ">
+        <p className="text-white my-2 ">
           Checkout these resources with my JavaScript & Typescript Projects and
           django framework
         </p>

@@ -8,9 +8,9 @@ const Navbar = () => {
   //     e.preventDefault()
   // }
   return (
-    <header className="sticky z-[100] h-14 inset-x-0 top-0 w-full border-b border-gray-200 bg-white/75 backdrop-blur-lg transition-all">
+    <header className="sticky  bg-[rgb(16,23,42)] text-white z-[100] h-14 inset-x-0 top-0 w-full border-b border-gray-200  backdrop-blur-lg transition-all">
       <MaxWidthWrapper>
-        <div className="flex h-14 items-center justify-between border-b border-zinc-200">
+        <div className="flex h-14 items-center justify-between bg-[rgb(16,23,42)] text-white border-b border-zinc-200">
           <Link href="/" className="flex z-40 font-semibold">
             Harman Muasa <span className="text-green-600">Blog</span>
           </Link>
@@ -39,9 +39,9 @@ const Navbar = () => {
             {/* <h3>currentUser</h3> */}
         {/* //   <Menu /> */}
         {/* ) : ( */}
-          <Link href="/signIn">
-            <Button className="bg-gradient-to-r focus:outline text-green-600 from-gray-300 via-slate-300 to-gray-100 rounded-lg">
-              Sign-In
+          <Link href="/signup">
+            <Button className="bg-gradient-to-r focus:outline text-gray-600 from-gray-300 via-slate-300 to-gray-100 rounded-lg">
+              Sign-up
             </Button>
           </Link>
         {/* )} */}

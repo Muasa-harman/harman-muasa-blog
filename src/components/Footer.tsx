@@ -1,8 +1,7 @@
 import Link from 'next/link';
 import React from 'react'
-
 import { BsDribbble, BsFacebook,BsWhatsapp, BsGithub, BsInstagram, BsTwitter} from "react-icons/bs";
-// import LinksComponent from './linkNave';
+
 
 const Footer = () => {
   return (
@@ -16,11 +15,7 @@ const Footer = () => {
           </div>
           <div className="grid grid-cols-2 gap-8 mt-4 sm:grid-cols-3 sm:gap-6">
             <div className="">
-              {/* <h3 className="">About</h3> */}
               <div className="flex flex-col">
-              {/* <Link hrefLang="https://www.linkedin.com/in/harman-muasa-fullstackdev/" target='_blank' rel='noopenernoreferrer'>
-              <span className="">portfolio</span>
-              </Link> */}
               <Link href="https://myportfolioblogapp.onrender.com/about" target='_blank' rel='noopenernoreferrer'>
               <span className="">About</span>
               </Link>
@@ -58,7 +53,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="w-full sm:flex sm:items-center sm:justify-between">
+        <div className="w-full sm:flex sm:items-center sm:justify-between bg-[rgb(16,23,42)] text-white">
           <div className=""> &copy; Harman Muasa Blog{new Date().getFullYear()} . All Right Reserved</div>
           <div className="flex gap-6 sm:mt-0 mt-4 sm:justify-center">
             {<BsFacebook/>}

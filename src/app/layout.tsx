@@ -24,13 +24,13 @@ export default function RootLayout({
       <body
          className={recursive.className}
       >
+          <div className="flex-1 flex flex-col h-full bg-[rgb(16,23,42)] text-white text-gray-200 min-h-screen">
         <Navbar/>
         <main className="flex grainy-light flex-col min-h-[calc(100vh-3.5rem-1px)]">
-          <div className="flex-1 flex flex-col h-full">
             <Providers>{children}</Providers>
-          </div>
           <Footer/>
         </main>
+          </div>
       </body>
     </html>
   );

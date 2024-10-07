@@ -5,7 +5,7 @@ import { getRecentAppointmentList } from "@/lib/actions/appointment.actions";
 import { FileUploader } from "@/components/FileUploader";
 import CustomFormField, { FormFieldType } from "@/components/CustomFormField";
 
-const AdminPage = async () => {
+const Page = async () => {
   const appointments = await getRecentAppointmentList();
 
   return (
@@ -34,41 +34,13 @@ const AdminPage = async () => {
 
         <section className="admin-stat">
           <h3 className="">Test</h3>
-        {/* <CustomFormField
-            fieldType={FormFieldType.SKELETON}
-            // control={form.control}
-            name="identificationDocument"
-            label="Scanned Copy of Identification Document"
-            renderSkeleton={(field) => (
-              <FormControl>
-                <FileUploader files={field.value} onChange={field.onChange} />
-              </FormControl>
-            )}
-          /> */}
-          {/* <StatCard
-            type="appointments"
-            count={appointments.scheduledCount}
-            label="Scheduled appointments"
-            icon={"/assets/icons/appointments.svg"}
-          /> */}
-          {/* <StatCard
-            type="pending"
-            count={appointments.pendingCount}
-            label="Pending appointments"
-            icon={"/assets/icons/pending.svg"}
-          /> */}
-          {/* <StatCard
-            type="cancelled"
-            count={appointments.cancelledCount}
-            label="Cancelled appointments"
-            icon={"/assets/icons/cancelled.svg"}
-          /> */}
+        
         </section>
 
-        {/* <DataTable columns={columns} data={appointments.documents} /> */}
+     
       </main>
     </div>
   );
 };
 
-export default AdminPage;
+export default Page;
