@@ -25,20 +25,6 @@ const Navbar = () => {
             </div>
           </form>
           <div className="flex gap-2 items-center md:order-2">
-        <button
-        //   onClick={() => dispatch(toggleTheme())}
-          className="w-12 h-10 hidden items-center sm:inline"
-        >
-          {/* {theme === "light" ? ( */}
-            {/* <FaSun /> */}
-          {/* ) : ( */}
-            {/* <FaMoon className="w-6 h-6" pill="true" /> */}
-          {/* )} */}
-        </button>
-        {/* {currentUser ? ( */}
-            {/* <h3>currentUser</h3> */}
-        {/* //   <Menu /> */}
-        {/* ) : ( */}
           <Link href="/signup">
             <Button className="bg-gradient-to-r focus:outline text-gray-600 from-gray-300 via-slate-300 to-gray-100 rounded-lg">
               Sign-up

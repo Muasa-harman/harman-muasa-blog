@@ -20,13 +20,13 @@ export default function Home() {
                   Your go-to hub for all things tech! Dive into a world of
                   insightful articles, especially on data structures and
                   algorithms, step-by-step video tutorials, and in-depth
-                  explorations of cutting-edge topics in web development, software
-                  engineering, and programming languages like JavaScript,
-                  TypeScript, and Python. Whether you're a curious beginner or a
-                  seasoned pro, there's something here for everyone. Stay ahead of
-                  the curve with expert tips, hands-on guides, and personal
-                  reflections on the latest trends in the tech world. Ready to
-                  level up? Let's get started!
+                  explorations of cutting-edge topics in web development,
+                  software engineering, and programming languages like
+                  JavaScript, TypeScript, and Python. Whether you're a curious
+                  beginner or a seasoned pro, there's something here for
+                  everyone. Stay ahead of the curve with expert tips, hands-on
+                  guides, and personal reflections on the latest trends in the
+                  tech world. Ready to level up? Let's get started!
                 </p>
 
                 <div className="absolute w-28 left-0 -top-20 hidden lg:block">
@@ -56,9 +56,16 @@ export default function Home() {
                 </p>
 
                 <Container className="my-8 lg:items-end">
-                  <iframe
+                  {/* <iframe
                     className="embed-responsive-item"
-                    src="https://www.youtube.com/embed/_FtH9oyyhJo"
+                    src="https://www.youtube.com/embed/kdPxheeDF4g"
+                    allowFullScreen
+                  /> */}
+                  <iframe
+                    width="639"
+                    height="360"
+                    src="https://www.youtube.com/embed/KrlmeH05gJI"
+                    title="introduction to Next.js and my project part 2"
                     allowFullScreen
                   />
                 </Container>
@@ -86,7 +93,7 @@ export default function Home() {
                   <div className="lg:ml-16 w-full lg:w-auto lg:max-w-xs bg-green-100 border border-green-300 p-4 text-center rounded-lg animate-slide-up">
                     <p className="text-green-700 font-bold text-lg">
                       Let us chat here!
-                      <br/>
+                      <br />
                       coming Soon
                     </p>
                   </div>
@@ -100,7 +107,7 @@ export default function Home() {
                 <Container className="lg:items-end">
                   <iframe
                     className="embed-responsive-item"
-                    src="https://www.youtube.com/embed/kdPxheeDF4g?si=A5CuY8krjjeoVYLi"
+                    src="https://www.youtube.com/embed/kdPxheeDF4g"
                     allowFullScreen
                   />
                 </Container>
@@ -117,10 +124,16 @@ export default function Home() {
                 `“Data structures and algorithms are the building blocks for development. I can tackle any coding challenge using optimum code to solve problems. Now, I understand the problem before bringing the solution in code."`,
                 `“I've been using TypeScript for months, and it's a game changer. My code is more reliable, catching errors early saves time, and the added type safety gives me confidence.”`,
               ].map((review, index) => (
-                <div key={index} className="flex flex-auto flex-col gap-4 lg:pr-8 xl:pr-20">
+                <div
+                  key={index}
+                  className="flex flex-auto flex-col gap-4 lg:pr-8 xl:pr-20"
+                >
                   <div className="flex gap-0.5 mb-2">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 text-green-600 fill-green-600" />
+                      <Star
+                        key={i}
+                        className="h-5 w-5 text-green-600 fill-green-600"
+                      />
                     ))}
                   </div>
                   <div className="text-lg leading-8">
@@ -141,5 +154,4 @@ export default function Home() {
     </div>
   );
 }
-
 

@@ -4,9 +4,8 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Providers from "@/components/Providers";
 import Footer from "@/components/Footer";
-// import { Provider } from "@/components/Provider";
 
-// const inter = Inter({subsets: ["latin"], variable: "--font-sans"})
+
 const recursive = Recursive({subsets: ['latin']})
 
 export const metadata: Metadata = {
