@@ -26,8 +26,13 @@ const Navbar = () => {
           </form>
           <div className="flex gap-2 items-center md:order-2">
           <Link href="/signup">
-            <Button className="bg-gradient-to-r focus:outline text-gray-600 from-gray-300 via-slate-300 to-gray-100 rounded-lg">
+            <Button className="bg-white border-green focus:outline-green-600 text-gray-600 from-gray-300 via-slate-300 to-gray-100 ">
               Sign-up
+            </Button>
+          </Link>
+          <Link href="/signin">
+            <Button className="bg-green-600 focus:outline text-white from-gray-300 via-slate-300 to-gray-100">
+              Sign-in
             </Button>
           </Link>
         {/* )} */}
