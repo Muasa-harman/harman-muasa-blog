@@ -25,7 +25,7 @@ const CallToAction = () => {
           django framework
         </p>
       </div>
-        <Button className="rounded-bl-none bg-gradient-to-r focus:outline from-gray-300 via-slate-500 to-gray-800 rounded-lg text-white p-2 text-black">
+        <Button className="rounded-bl-none bg-gradient-to-r focus:outline from-gray-300 via-slate-500 to-gray-800 hover:bg-green-600 rounded-lg text-white p-2 text-black">
           {" "}
           <Link href="/myprojects" target="_blank" rel="noopener noreferrer">
             {" "}
