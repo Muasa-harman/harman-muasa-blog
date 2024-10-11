@@ -14,7 +14,7 @@ const ProjectCard = ({ title, image, link, target, rel = "noopener noreferrer"  
           className="h-[300px] w-full object-cover group-hover:h-[200px] transition-all duration-300 ease-in-out -z-20"
         />
         <div className="p-3 flex flex-col gap-2">
-          <h3 className="text-lg font-semibold line-clamp-2">{title}</h3>
+          <h3 className="text-lg font-semibold line-clamp-2 hover:text-green-800 focus:border-green-500">{title}</h3>
         </div>
       </a>
     </div>

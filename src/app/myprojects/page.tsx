@@ -8,13 +8,16 @@ import Ecommerce from "../../../public/assets/Ecommerce.png";
 import POS from "../../../public/assets/POS.png";
 import ProjectCard from "@/components/ProjectCard";
 import  Dashboard from "../../../public/assets/Dashboard.png"
+import Link from 'next/link';
  
 const ProjectsPage = () => {
   return (
     <div>
       <div className="max-w-6xl mx-auto p-3 flex flex-col gap-8 py-7">
         <div className="flex flex-col gap-6">
-          <h2 className="text-2xl font-semibold text-center">Recent Projects</h2>
+          <Link href={'/'}>
+          <h2 className="text-2xl font-semibold text-center hover:text-green-800 focus:border-green-500">Recent Projects</h2>
+          </Link>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 justify-center">
             <ProjectCard title={"Root blog in React and Nodejs"} target='_blank' rel='noopener noreferrer' image={Harman} link={"https://myportfolioblogapp.onrender.com/"} />
             <ProjectCard title={"Data Dashboard"} target='_blank' rel='noopener noreferrer' image={Dashboard} link={"https://savanna-test-beta.vercel.app/"} />

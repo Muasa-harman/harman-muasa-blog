@@ -13,9 +13,11 @@ export default function Home() {
           <MaxWidthWrapper className="pb-20 pt-8 bg-[rgb(16,23,42)] text-white lg:grid lg:grid-cols-3 sm:pb-28 lg:gap-x-0 xl:gap-x-8 lg:pt-10 xl:pt-16 lg:pb-40">
             <div className="col-span-2 px-6 lg:px-0">
               <div className="relative mx-auto text-center lg:text-left flex flex-col items-center lg:items-start">
+                <Link href={"/projects"} className="hover:text-green-800 focus:border-green-500">
                 <h3 className="text-3xl font-bold">
                   Welcome to My Developer's Playground
                 </h3>
+                </Link>
                 <p className="text-white text-xs sm:text-sm">
                   Your go-to hub for all things tech! Dive into a world of
                   insightful articles, especially on data structures and
@@ -49,7 +51,7 @@ export default function Home() {
                 <p className="mt-6 text-lg lg:pr-10 max-w-prose text-center lg:text-left text-balance md:text-wrap">
                   Learn more about web development and software engineering,{" "}
                   <span className="font-semibold">one-of-one</span> tutorials.
-                  HarmanMuasa blog is an exciting coding challenge, especially
+                  H@rtmanMuasa blog is an exciting coding challenge, especially
                   when it aims to offer a unique blend of functionality and
                   whether you're working with a MERN stack, Next.js, or other
                   tools, and the coding considerations involved.

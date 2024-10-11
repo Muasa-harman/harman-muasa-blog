@@ -12,7 +12,7 @@ const Navbar = () => {
       <MaxWidthWrapper>
         <div className="flex h-14 items-center justify-between bg-[rgb(16,23,42)] text-white border-b border-zinc-200">
           <Link href="/" className="flex z-40 font-semibold">
-            Harman Muasa <span className="text-green-600">Blog</span>
+            H@rtman Muasa <span className="text-green-600">Blog</span>
           </Link>
           <form>
             <div className="flex items-center">
@@ -40,13 +40,13 @@ const Navbar = () => {
       </div>
           <nav className="flex items-center justify-evenly">
             {/* <IoMenuSharp className="w-6 h-6"/> */}
-            <div className="mr-5 hover:text-slate-800 focus:border-green-500">
+            <div className="mr-5 hover:hover:text-green-800 focus:border-green-500">
               <Link href="/projects/">Projects</Link>
             </div>
-            <div className="mr-5 hover:text-slate-800 focus:border-green-500">
+            <div className="mr-5 hover:hover:text-green-800 focus:border-green-500">
               <Link href="/about">Canvas Profile</Link>
             </div>
-            <div className="ml-5 hover:text-slate-800 focus:border-green-500">
+            <div className="ml-5 hover:hover:text-green-800 focus:border-green-500">
               <Link href="/">Home</Link>
             </div>
           </nav>
