@@ -51,8 +51,8 @@ export const RegisterForm = () => {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="flex-1 space-y-6">
-        <section className="mb-12 space-y-4">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="flex-1 space-y-1">
+        <section className="mb-12 space-y-2">
           <h1 className="header">Hi there 👋</h1>
           <p className="text-dark-700">Get started with joining membership is free.</p>
         </section>

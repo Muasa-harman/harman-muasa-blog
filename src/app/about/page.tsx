@@ -2,12 +2,13 @@ import React from "react";
 import Image from "next/image";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Profile from "@/components/Profile";
+import Link from "next/link";
 
 export default function About() {
   return (
     <div className="flex flex-col">
       <div className="min-h-screen flex items-center justify-center">
-        <MaxWidthWrapper className="pb-24 pt-5 lg:grid lg:grid-cols-2 sm:pb-32 lg:gap-x-12 xl:gap-x-16 lg:pt-14 xl:pt-32 lg:pb-52">
+        <MaxWidthWrapper className="pb-24 pt-3 lg:grid lg:grid-cols-2 sm:pb-32 lg:gap-x-12 xl:gap-x-16 lg:pt-14 xl:pt-32 lg:pb-52">
           {/* Left Column - Text Content */}
           <section className="animate-fadeIn">
             <div className="max-w-2xl mx-auto p-3 text-left">
@@ -84,9 +85,9 @@ export default function About() {
                     I aspire to develop tech solutions that address local and
                     global challenges and also uplift the less fortunate. This
                     could involve creating accessible educational platforms such
-                    as my blog, building applications that streamline essential
+                    as my blog, building and contributing to open-source applications that streamline essential
                     services, or even crafting programs that provide digital
-                    literacy training like my YouTube channel where I post
+                    literacy training like <Link href={''} className="text-green-600">my Youtube Channel</Link> where I post
                     educational materials and programming concepts — all with
                     the goal of fostering a more inclusive and tech-connected
                     society as the world becomes a global village.

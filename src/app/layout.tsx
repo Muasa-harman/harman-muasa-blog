@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 const recursive = Recursive({subsets: ['latin']})
 
 export const metadata: Metadata = {
-  title: "harman-muasa-blog-next",
+  title: "h@rtman-muasa-blog-next",
   description: "pages",
 };
 

@@ -11,7 +11,7 @@ const signIn = ({ searchParams }: SearchParamProps) => {
       {/* Left Section */}
       <section className="remove-scrollbar flex flex-col justify-center container my-auto">
         <div className="sub-container max-w-[496px] mx-auto">
-          <div className="mb-12 h-10 w-fit text-2xl font-bold">
+          <div className="mb-1 h-10 w-fit text-2xl font-bold">
             Harman Muasa Blog
           </div>
 
