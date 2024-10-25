@@ -1,12 +1,17 @@
+"use client"
+
 import Link from "next/link";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
-
+import {useRouter} from "next/navigation"
+import React from "react";
 const Navbar = () => {
-  // const handleSubmit = (e) =>{
-  //     e.preventDefault()
-  // }
+  const router = useRouter()
+  const handlePostSearch = (e:React.FormEvent) =>{
+      e.preventDefault()
+      router.push("/posts")
+  }
   return (
     <header className="sticky  bg-[rgb(16,23,42)] text-white z-[100] h-14 inset-x-0 top-0 w-full border-b border-gray-200  backdrop-blur-lg transition-all">
       <MaxWidthWrapper>
@@ -14,7 +19,7 @@ const Navbar = () => {
           <Link href="/" className="flex z-40 font-semibold">
             H@rtman Muasa <span className="text-green-600">Blog</span>
           </Link>
-          <form>
+          <form onSubmit={handlePostSearch}>
             <div className="flex items-center">
               <Input
                 type="text"
