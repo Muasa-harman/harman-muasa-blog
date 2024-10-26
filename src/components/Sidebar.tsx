@@ -11,7 +11,7 @@ const Sidebar: React.FC = () => {
   const pathname = usePathname();
   const [searchTerm, setSearchTerm] = useState("");
 
-  const handleSearch = (e: React.FormEvent) => {
+  const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     e.preventDefault();
   };
 
@@ -30,7 +30,7 @@ const Sidebar: React.FC = () => {
         {/* Search Input */}
         <form
           className="flex flex-col flex-grow mb-4"
-          onSubmit={handleSearch}
+          // onSubmit={handleSearch}
         >
 
         <div className="relative ml-5 max-w-md mx-auto mt-4">
@@ -58,10 +58,11 @@ const Sidebar: React.FC = () => {
             <label className="flex items-center">
               <input
                 type="radio"
-                name="distance"
+                name="framework"
+                // checked={selectedFrame === "typescript"}
                 value="any"
                 // checked={selectedDistance === "any"}
-                // onChange={handleDistanceChange}
+                onChange={handleSearch}
                 className="form-radio text-custom-purple"
               />
               <span className="ml-2">Typescript</span>
@@ -71,7 +72,7 @@ const Sidebar: React.FC = () => {
                 type="radio"
                 name="distance"
                 value="under_3"
-                // checked={selectedDistance === "under_3"}
+                // checked={selectedFrame === "typescript"}
                 // onChange={handleDistanceChange}
                 className="form-radio text-custom-purple"
               />
@@ -82,7 +83,7 @@ const Sidebar: React.FC = () => {
                 type="radio"
                 name="distance"
                 value="3_to_6"
-                // checked={selectedDistance === "3_to_6"}
+                // checked={selectedFrame === "react"}
                 // onChange={handleDistanceChange}
                 className="form-radio text-custom-purple"
               />
@@ -93,7 +94,7 @@ const Sidebar: React.FC = () => {
                 type="radio"
                 name="distance"
                 value="6_to_15"
-                // checked={selectedDistance === "6_to_15"}
+                // checked={selectedFrame ==="next"}
                 // onChange={handleDistanceChange}
                 className="form-radio text-custom-purple"
               />
@@ -104,7 +105,7 @@ const Sidebar: React.FC = () => {
                 type="radio"
                 name="distance"
                 value="more_than_16"
-                // checked={selectedDistance === "more_than_16"}
+                // checked={selectedFrame ==="python"}
                 // onChange={handleDistanceChange}
                 className="form-radio text-custom-purple"
               />
