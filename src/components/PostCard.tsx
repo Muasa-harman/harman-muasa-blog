@@ -1,37 +1,76 @@
 import Link from "next/link";
 
-interface PostCardProps{
+interface PostCardProps {
   card: {
-    title: string,
-    slug:string,
-    image:string,
+    title: string;
+    slug: string;
+    image: string;
   };
 }
 
-
-
-const PostCard: React.FC<PostCardProps> = ()=>{
-  return(
-    <Link href={'/details'}>
-    <div style={{backgroundImage:""}} className={`bg-cover bg-center text-white rounded-lg p-4 h-64 transition-transform hover:scale-105`}>
-      <div className="flex justify-between items-start">
-        <span className="text-sm">My project</span>
-        <div className="flex flex-col items-end mt-2">
-        <button className={`text-white px-2 py-1 rounded-full bg-custom-green`}>Update</button>
-        <div className="flex mt-1">
-          <h5 className="">React:</h5>
+const PostCard: React.FC<PostCardProps> = ({ card }) => {
+  return (
+    <Link href={`/details/${card.slug}`}>
+      <div
+        style={{ backgroundImage: `url(${card.image})` }}
+        className="bg-cover bg-center text-white rounded-lg p-4 h-64 transition-transform hover:scale-105 shadow-lg"
+      >
+        {/* Card Header */}
+        <div className="flex justify-between items-start mb-2">
+          <span className="text-sm font-semibold">{card.title}</span>
+          <button className="text-white px-2 py-1 rounded-full bg-green-600 hover:bg-green-700">
+            Update
+          </button>
         </div>
+
+        {/* Card Body */}
+        <div className="mt-2">
+          <h4 className="text-lg font-bold">Description</h4>
+          <p className="text-sm text-gray-200 mt-1">Project details go here...</p>
         </div>
       </div>
-      <div className="">
-        <h4 className="">Description</h4>
-      </div>
-    </div>
     </Link>
-  )
-}
+  );
+};
 
 export default PostCard;
+
+
+
+// import Link from "next/link";
+
+// interface PostCardProps{
+//   card: {
+//     title: string,
+//     slug:string,
+//     image:string,
+//   };
+// }
+
+
+
+// const PostCard: React.FC<PostCardProps> = ()=>{
+//   return(
+//     <Link href={'/details'}>
+//     <div style={{backgroundImage:""}} className={`bg-cover bg-center text-white rounded-lg p-4 h-64 transition-transform hover:scale-105`}>
+//       <div className="flex justify-between items-start">
+//         <span className="text-sm">My project</span>
+//         <div className="flex flex-col items-end mt-2">
+//         <button className={`text-white px-2 py-1 rounded-full bg-custom-green`}>Update</button>
+//         <div className="flex mt-1">
+//           <h5 className="">React:</h5>
+//         </div>
+//         </div>
+//       </div>
+//       <div className="">
+//         <h4 className="">Description</h4>
+//       </div>
+//     </div>
+//     </Link>
+//   )
+// }
+
+// export default PostCard;
 
 // "use client"
 
