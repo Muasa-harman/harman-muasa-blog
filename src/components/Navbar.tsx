@@ -24,7 +24,7 @@ const Navbar = () => {
               <Input
                 type="text"
                 placeholder="search post..."
-                className="outline-none border text-black p-2 "
+                className="outline-none border text-white p-2 "
               />
               <Button type="submit" className="w-12 h-10 lg:hidden"></Button>
             </div>

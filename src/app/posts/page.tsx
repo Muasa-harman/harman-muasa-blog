@@ -24,6 +24,8 @@ const posts = [
 ];
 
 const page = () => {
+
+  const image= 'https://tsh.io/wp-content/uploads/2022/03/Next-logo-adj.png'
   return (
     <div className="flex">
       {/* Sidebar */}
@@ -41,15 +43,15 @@ const page = () => {
 
         {/* Grid of PostCards */}
         <div className="grid grid-cols-3 gap-4">
-          <PostCard card={{ title: "Node.js", slug: "", image: "" ,description:"Multi Processing"}} />
+          <PostCard card={{ title: "Node.js", slug: "", image: image ,description:"Multi Processing"}} />
           <PostCard card={{ title: "Javascript", slug: "", image: "",description:"Process-pool" }} />
-          <PostCard card={{ title: "Vue", slug: "8", image: "",description:'Multi Threading' }}/>
+          <PostCard card={{ title: "Vue", slug: "8", image: image,description:'Multi Threading' }}/>
           <PostCard card={{ title: "React", slug: "9", image: "",description:'Generators' }} />
-          <PostCard card={{ title: "Polymorphism", slug: "", image: "",description:'Lambda function' }} />
+          <PostCard card={{ title: "Polymorphism", slug: "", image: image,description:'Lambda function' }} />
           <PostCard card={{ title: "Inheritance", slug: "", image: "",description:'Itertool' }} />
-          <PostCard card={{ title: "Data structures", slug: "", image: "",description:'JSON' }} />
+          <PostCard card={{ title: "Data structures", slug: "", image: image,description:'JSON' }} />
           <PostCard card={{ title: "Next", slug: "", image: "",description:'Decorators' }} />
-          <PostCard card={{ title: "Python", slug: "", image: "",description:'Data Structures' }} />
+          <PostCard card={{ title: "Python", slug: "", image: image,description:'Data Structures' }} />
         </div>
       </div>
     </div>
