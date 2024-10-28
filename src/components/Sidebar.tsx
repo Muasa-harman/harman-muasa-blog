@@ -3,6 +3,7 @@
 import { Search } from "lucide-react";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
+import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 
 const Sidebar: React.FC = () => {
   const router = useRouter();
@@ -25,13 +26,13 @@ const Sidebar: React.FC = () => {
   return (
     <div className="flex flex-col justify-between h-screen w-48 text-gray-300 border-r border-white p-6">
       {/* Sidebar Header */}
-      <div className="text-center mb-4">
+      <div className="text-center">
         <h1 className="text-2xl font-bold text-white">H@rtman</h1>
       </div>
 
       {/* Search Input */}
-      <form className="flex flex-col mb-4">
-        <div className="relative max-w-md mx-auto mt-4">
+      <form className="flex flex-col">
+        <div className="relative max-w-md mx-auto">
           <input
             type="text"
             value={searchTerm}
@@ -46,7 +47,7 @@ const Sidebar: React.FC = () => {
       </form>
 
       {/* Framework Selection */}
-      <div className="space-y-6">
+      <div className="space-y-2 top-2">
         <h4 className="text-lg font-semibold">Select Framework:</h4>
         <div className="max-w-lg rounded-lg p-4 bg-gray-800 shadow-md">
           <h2 className="text-xl font-bold mb-2">Language:</h2>

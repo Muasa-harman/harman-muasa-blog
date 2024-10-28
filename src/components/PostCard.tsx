@@ -50,6 +50,7 @@ interface PostCardProps {
     title: string;
     slug: string;
     image: string;
+    description:string;
   };
 }
 
@@ -64,13 +65,13 @@ const PostCard: React.FC<PostCardProps> = ({ card }) => {
         <div className="flex justify-between items-start mb-2">
           <span className="text-sm font-semibold">{card.title}</span>
           <button className="text-white px-2 py-1 rounded-full bg-green-600 hover:bg-green-700">
-            Update
+            View
           </button>
         </div>
 
         {/* Card Body */}
         <div className="mt-2">
-          <h4 className="text-lg font-bold">Description</h4>
+          <h4 className="text-lg font-bold">{card.description}</h4>
           <p className="text-sm text-gray-200 mt-1">Project details go here...</p>
         </div>
       </div>
