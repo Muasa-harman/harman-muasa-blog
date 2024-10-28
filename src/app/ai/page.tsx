@@ -64,7 +64,7 @@ const SearchPage: React.FC = () => {
 
   return (
     <div className="container mx-auto p-4 sm:p-6 lg:p-8">
-      <h1 className="text-2xl sm:text-3xl font-bold mb-4 text-center">Generate AI Content</h1>
+      <h1 className="text-2xl sm:text-3xl font-bold mb-4 text-center">Generate Results</h1>
       
       <form 
         onSubmit={handleSearch} 
@@ -97,7 +97,7 @@ const SearchPage: React.FC = () => {
               className="border-b border-gray-300 pb-2"
             >
               <h2 className="font-semibold text-lg">{result.title}</h2>
-              <p className="text-sm sm:text-base text-gray-700">{result.description}</p>
+              <p className="text-sm sm:text-base white">{result.description}</p>
             </li>
           ))}
         </ul>
