@@ -3,7 +3,8 @@ import React from 'react';
 const Card = () => {
   const title = "Introduction to TypeScript";
   const language = "TypeScript";
-  const imageUrl = "https://via.placeholder.com/300x200";
+  // const imageUrl = "https://via.placeholder.com/300x200";
+  const imageUrl= 'https://tsh.io/wp-content/uploads/2022/03/Next-logo-adj.png'
   const date = "12/07/2024";
   const readTime = "1 min read";
   const items = [
@@ -19,13 +20,13 @@ const Card = () => {
   return (
     <div className="max-w-sm border border-gray-200 rounded-lg shadow-lg overflow-hidden">
       <h2 className="text-xl font-semibold p-4">{title}</h2>
-      <p className="text-gray-500 px-4">{language}</p>
+      <p className="text-white px-4">{language}</p>
       <img src={imageUrl} alt="Card" className="w-full h-48 object-cover" />
-      <div className="flex justify-between items-center p-4 text-gray-600 text-sm">
+      <div className="flex justify-between items-center p-4 text-white text-sm">
         <span>{date}</span>
         <span>{readTime}</span>
       </div>
-      <ul className="px-4 pb-4 text-gray-700 list-disc list-inside space-y-1">
+      <ul className="px-4 pb-4 text-white list-disc list-inside space-y-1">
         {items.map((item, index) => (
           <li key={index}>{item}</li>
         ))}
