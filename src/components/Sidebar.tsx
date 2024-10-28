@@ -4,6 +4,7 @@ import { Search } from "lucide-react";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import Link from "next/link";
 
 const Sidebar: React.FC = () => {
   const router = useRouter();
@@ -23,6 +24,11 @@ const Sidebar: React.FC = () => {
     router.push("/post");
   };
 
+  const handleSubmit = (e:React.FormEvent) =>{
+    e.preventDefault();
+    router.push("/ai");
+  }
+
   return (
     <div className="flex flex-col justify-between h-screen w-48 text-gray-300 border-r border-white p-6">
       {/* Sidebar Header */}
@@ -31,20 +37,22 @@ const Sidebar: React.FC = () => {
       </div>
 
       {/* Search Input */}
-      <form className="flex flex-col">
-        <div className="relative max-w-md mx-auto">
+      {/* <form className="flex flex-col" onSubmit={handleSubmit}> */}
+        <h4 className="text-lg font-semibold">Search with Ai:</h4>
+        <Link href={'/ai'} className="bg-green-500 hover:bg-slate-500 rounded-md text-white transition duration-200 px-4 py-2 mt-4 w-full">Click Here</Link>
+        {/* <div className="relative max-w-md mx-auto">
           <input
             type="text"
             value={searchTerm}
             onChange={handleSearch}
-            placeholder="Search by distance, keyword..."
+            placeholder="Ai Search..."
             className="border border-gray-300 rounded-md pl-12 pr-4 py-2 w-full bg-custom-dark text-gray-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
           />
           <div className="absolute left-4 top-1/2 transform -translate-y-1/2">
             <Search className="text-gray-400" />
           </div>
         </div>
-      </form>
+      </form> */}
 
       {/* Framework Selection */}
       <div className="space-y-2 top-2">
