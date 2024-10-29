@@ -1,4 +1,3 @@
-// Framework.tsx
 import React from "react";
 import { useRouter } from "next/navigation";
 
@@ -14,8 +13,6 @@ const FrameworkContent: React.FC<FrameworkContentProps> = ({ selectedFramework }
       alert("Please select a framework to filter!");
       return;
     }
-
-    // Sample data based on the selected framework
     const sampleData = [
       { title: "Intro to TypeScript", description: "Learn the basics of TypeScript." },
       { title: "Advanced TypeScript", description: "Deep dive into TypeScript features." },
@@ -27,11 +24,9 @@ const FrameworkContent: React.FC<FrameworkContentProps> = ({ selectedFramework }
 
   return (
     <div className="p-4">
-      <h2 className="text-xl font-bold mb-4">Framework: {selectedFramework || "None selected"}</h2>
-
       <button
         onClick={handleFilter}
-        className="py-2 px-4 bg-green-600 text-white rounded-md hover:bg-green-300 mb-4"
+        className="py-2 px-4 bg-green-600 text-white rounded-md hover:bg-green-700 mb-4"
       >
         Filter
       </button>
