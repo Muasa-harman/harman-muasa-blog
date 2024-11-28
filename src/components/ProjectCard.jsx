@@ -1,14 +1,27 @@
-// components/ProjectCard.js
+'use client'
 
 import Image from "next/image";
+import { useState,useEffect } from "react";
 
-const ProjectCard = ({ title, image, link, target, rel = "noopener noreferrer"  }) => {
+
+const ProjectCard = ({ title, images, link, target, rel = "noopener noreferrer"  }) => {
+  const [currentImageIndex,setCurrentImageIndex] = useState(0);
+
+  useEffect(()=>{
+    const interval = setInterval(()=>{
+      setCurrentImageIndex((prevIndex) =>(prevIndex + 1) % images.length)
+      
+    },3000);
+    return () =>clearInterval(interval);
+  },[images.length]);
+
+
   return (
     <div className="group relative w-full border border-teal-400 hover:border-2 h-[300px] overflow-hidden rounded-lg sm:w-[430px] transition-all">
       <a href={link} target={target} rel={rel}>
         <Image
-          src={image}
-          alt={title}
+          src={images[currentImageIndex]}
+          alt={`${title} - Image ${currentImageIndex + 1}`}
           width={400}
           height={400}
           className="h-[300px] w-full object-cover group-hover:h-[200px] transition-all duration-300 ease-in-out -z-20"
