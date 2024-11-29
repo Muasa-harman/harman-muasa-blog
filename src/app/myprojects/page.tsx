@@ -38,9 +38,27 @@ const projects = [
     target: "_blank",
   },
   {
+    title: "Property Management",
+    images: [Property1, Property2,Property3],
+    link: "https://property-management-rh6h.onrender.com/",
+    target: "_blank",
+  },
+  {
+    title: "Hotel Reservation",
+    images: [Hotel1, Hotel2, Hotel3],
+    link: "https://hotel-reservation-app-uesu.onrender.com/",
+    target: "_blank",
+  },
+  {
     title: "IntelliVisual Dashboard",
     images: [Sav1, Sav2,Sav3],
     link: "https://savanna-test-beta.vercel.app/",
+    target: "_blank",
+  },
+  {
+    title: "POS SYSTEM",
+    images: [Property1, Property2,Property3],
+    link: "https://pointofsalesystem-pos.onrender.com/",
     target: "_blank",
   },
   {
@@ -56,27 +74,9 @@ const projects = [
     target: "_blank",
   },
   {
-    title: "Hotel Reservation",
-    images: [Hotel1, Hotel2, Hotel3],
-    link: "https://hotel-reservation-app-uesu.onrender.com/",
-    target: "_blank",
-  },
-  {
-    title: "Property Management",
-    images: [Property1, Property2,Property3],
-    link: "https://property-management-rh6h.onrender.com/",
-    target: "_blank",
-  },
-  {
     title: "Food Delivery",
     images: [Portfoli1, Portfoli2,Portfoli3],
     link: "https://donfiles-online-food-delivery-app.onrender.com",
-    target: "_blank",
-  },
-  {
-    title: "POS SYSTEM",
-    images: [Property1, Property2,Property3],
-    link: "https://pointofsalesystem-pos.onrender.com/",
     target: "_blank",
   },
 ];
