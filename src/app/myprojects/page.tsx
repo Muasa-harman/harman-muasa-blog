@@ -19,12 +19,12 @@ import ProjectCard from "@/components/ProjectCard";
 import Link from "next/link";
 
 const projects = [
-  {
-    title: "Interactive Data Explorer",
-    images: [dash1, dash2, dash3],
-    link: "https://portfolio-profile-blush.vercel.app/",
-    target: "_blank",
-  },
+  // {
+  //   title: "Interactive Data Explorer",
+  //   images: [dash1, dash2, dash3],
+  //   link: "https://portfolio-profile-blush.vercel.app/",
+  //   target: "_blank",
+  // },
   {
     title: "Dynamic Analytics Dashboard",
     images: [Sav1,Sav2,Sav3],

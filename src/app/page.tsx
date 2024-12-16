@@ -56,13 +56,8 @@ export default function Home() {
                   whether you're working with a MERN stack, Next.js, or other
                   tools, and the coding considerations involved.
                 </p>
-
-                <Container className="my-8 lg:items-end">
-                  {/* <iframe
-                    className="embed-responsive-item"
-                    src="https://www.youtube.com/embed/kdPxheeDF4g"
-                    allowFullScreen
-                  /> */}
+                <div className="sticky top-20 animate-fadeIn">
+                <Container className="my-8 lg:items-end align-center top-20 animate-fadeIn">
                   <iframe
                     width="639"
                     height="360"
@@ -71,6 +66,7 @@ export default function Home() {
                     allowFullScreen
                   />
                 </Container>
+                </div>
 
                 {/* List and Chat Component Side by Side */}
                 <div className="flex flex-col lg:flex-row justify-between w-full mt-4">
