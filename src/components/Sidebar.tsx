@@ -18,7 +18,7 @@ const Sidebar: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col justify-between h-screen w-48 text-gray-300 border-r border-white p-6">
+    <div className="flex flex-col justify-between h-screen w-48 text-gray-300 border-r  p-6"> {/* border-white */}
       {/* Sidebar Header */}
       <div className="text-center">
         <h1 className="text-2xl font-bold text-white">H@rtman</h1>
