@@ -19,12 +19,12 @@ import ProjectCard from "@/components/ProjectCard";
 import Link from "next/link";
 
 const projects = [
-  // {
-  //   title: "Interactive Data Explorer",
-  //   images: [dash1, dash2, dash3],
-  //   link: "https://portfolio-profile-blush.vercel.app/",
-  //   target: "_blank",
-  // },
+  {
+    title: "Interactive Data Explorer",
+    images: [dash1, dash2, dash3],
+    link: "https://portfolio-profile-blush.vercel.app/",
+    target: "_blank",
+  },
   {
     title: "Dynamic Analytics Dashboard",
     images: [Sav1,Sav2,Sav3],
@@ -67,12 +67,12 @@ const projects = [
     link: "https://yala-finance-dashboard-demo.vercel.app/",
     target: "_blank",
   },
-  // {
-  //   title: "E-commerce",
-  //   images: [dash1,dash2,dash3],
-  //   link: "https://next-js-ecommerce-bspt103t6-yala-finance-dashboards-projects.vercel.app/",
-  //   target: "_blank",
-  // },
+  {
+    title: "E-commerce",
+    images: [dash1,dash2,dash3],
+    link: "https://next-js-ecommerce-bspt103t6-yala-finance-dashboards-projects.vercel.app/",
+    target: "_blank",
+  },
   {
     title: "Food Delivery",
     images: [Portfoli1, Portfoli2,Portfoli3],
