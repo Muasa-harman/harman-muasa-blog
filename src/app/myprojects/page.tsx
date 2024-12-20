@@ -31,7 +31,7 @@ const projects = [
   {
     title: "Contribution Collection App",
     images: [gusi1, gusi2, gusi3],
-    link: "https://portfolio-profile-blush.vercel.app/",
+    link: "https://gusii-hope.vercel.app/",
     target: "_blank",
   },
   {
@@ -73,7 +73,7 @@ const projects = [
   {
     title: "Contribution Collection App",
     images: [gusi1, gusi2, gusi3],
-    link: "https://portfolio-profile-blush.vercel.app/",
+    link: "https://gusii-hope.vercel.app/",
     target: "_blank",
   },
   {
