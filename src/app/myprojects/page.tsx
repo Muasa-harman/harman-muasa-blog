@@ -16,12 +16,21 @@ import dash1 from "../../../public/assets/dash1.png";
 import dash2 from "../../../public/assets/dash2.png";
 import dash3 from "../../../public/assets/dash3.png";
 import ProjectCard from "@/components/ProjectCard";
+import gusi1 from "../../../public/assets/gusii1.png";
+import gusi2 from "../../../public/assets/gusii2.png";
+import gusi3 from "../../../public/assets/gusii3.png";
 import Link from "next/link";
 
 const projects = [
   {
     title: "Interactive Data Explorer",
     images: [dash1, dash2, dash3],
+    link: "https://portfolio-profile-blush.vercel.app/",
+    target: "_blank",
+  },
+  {
+    title: "Contribution Collection App",
+    images: [gusi1, gusi2, gusi3],
     link: "https://portfolio-profile-blush.vercel.app/",
     target: "_blank",
   },
@@ -59,6 +68,12 @@ const projects = [
     title: "POS SYSTEM",
     images: [Property1, Property2,Property3],
     link: "https://pointofsalesystem-pos.onrender.com/",
+    target: "_blank",
+  },
+  {
+    title: "Contribution Collection App",
+    images: [gusi1, gusi2, gusi3],
+    link: "https://portfolio-profile-blush.vercel.app/",
     target: "_blank",
   },
   {
