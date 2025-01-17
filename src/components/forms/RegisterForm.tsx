@@ -7,7 +7,8 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 
 import { Form } from "@/components/ui/form";
-import { createUser } from "@/lib/actions/user.actions";
+// import { createUser } from "@/lib/actions/user.actions";
+// import {createUser} from "@/lib/actions/user.actions"
 import { UserFormValidation } from "@/lib/validation";
 
 import "react-phone-number-input/style.css";
@@ -31,22 +32,25 @@ export const RegisterForm = () => {
     setIsLoading(true);
 
     try {
-      const user = {
-        name: values.name,
-        email: values.email,
-        phone: values.phone,
-      };
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/register`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      });
 
-      const newUser = await createUser(user);
-
-      if (newUser) {
-        router.push(`/patients/${newUser.$id}/register`);
+      if(!response.ok){
+        throw new Error("Failed to register user")
       }
-    } catch (error) {
-      console.log(error);
-    }
 
-    setIsLoading(false);
+      const newUser = await response.json();
+      router.push(`/${newUser.$id}/register`);
+    } catch (error) {
+      console.log("Error registering user:",error);
+    } finally{
+      setIsLoading(false);
+    }
   };
 
   return (

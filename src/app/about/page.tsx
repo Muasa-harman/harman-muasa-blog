@@ -13,21 +13,23 @@ export default function About() {
           <section className="animate-fadeIn">
             <div className="max-w-2xl mx-auto p-3 text-left">
               <div>
-                <h1 className="text-3xl font-semibold text-center my-7 text-white">
+                <h1 className="text-3xl font-semibold text-center my-7 text-white animate-fadeIn-up">
                   Harman Muasa
                 </h1>
-                <h1 className="text-xl text-center my-7 text-white">
+                <h1 className="text-xl text-center my-7 text-white animate-fadeIn-up">
                   Software Engineer |{" "}
                   <span className="text-green-600">Full-Stack Developer</span>
                 </h1>
                 <div className="text-md text-white flex flex-col gap-6">
                   <div>
-                    <h1 className="text-3xl font-semibold text-white text-center my-7">
+                    <h1 className="text-3xl font-semibold text-white text-center my-7 animate-fadeIn-up">
                       Introduction
                     </h1>
                   </div>
-                  <h1 className="text-xl text-white font">About me</h1>
-                  <p>
+                  <h1 className="text-xl text-white font animate-fadeIn-up">
+                    About me
+                  </h1>
+                  <p className="animate-fadeIn-up">
                     Jambo, my name is{" "}
                     <span className="text-green-600">Harman Muasa</span>, a
                     software engineer living and coding in Nairobi, Kenya.
@@ -42,10 +44,10 @@ export default function About() {
                     to share them with you. Above all, I find deep strength and
                     purpose in my devotion to God.
                   </p>
-                  <h1 className="text-xl text-white font">
+                  <h1 className="text-xl text-white font animate-fadeIn-up">
                     My Heritage and Roots
                   </h1>
-                  <p>
+                  <p className="animate-fadeIn-up">
                     As the youngest of four siblings, I grew up in a family that
                     instilled strong values in me. My father, a dedicated
                     military man, taught me the importance of discipline and
@@ -62,10 +64,10 @@ export default function About() {
                     strengthen our bond. The moments of togetherness are a
                     constant source of joy and inspiration for me.
                   </p>
-                  <h1 className="text-xl text-white font">
+                  <h1 className="text-xl text-white font animate-fadeIn-up">
                     Personal Journey and Milestones
                   </h1>
-                  <p>
+                  <p className="animate-fadeIn-up">
                     My undergraduate degree was a pivotal milestone in my
                     development. It equipped me with a strong foundation in
                     knowledge and critical thinking skills. This journey would
@@ -78,19 +80,24 @@ export default function About() {
                     felt empowered to take this leap and embark on this exciting
                     new chapter.
                   </p>
-                  <h1 className="text-xl text-white font">
+                  <h1 className="text-xl text-white font animate-fadeIn-up">
                     My Future Aspirations
                   </h1>
-                  <p className="text-white">
+                  <p className="text-white animate-fadeIn-up">
                     I aspire to develop tech solutions that address local and
                     global challenges and also uplift the less fortunate. This
                     could involve creating accessible educational platforms such
-                    as my blog, building and contributing to open-source applications that streamline essential
-                    services, or even crafting programs that provide digital
-                    literacy training like <Link href={''} className="text-green-600">my Youtube Channel</Link> where I post
-                    educational materials and programming concepts — all with
-                    the goal of fostering a more inclusive and tech-connected
-                    society as the world becomes a global village.
+                    as my blog, building and contributing to open-source
+                    applications that streamline essential services, or even
+                    crafting programs that provide digital literacy training
+                    like{" "}
+                    <Link href={""} className="text-green-600">
+                      my Youtube Channel
+                    </Link>{" "}
+                    where I post educational materials and programming concepts
+                    — all with the goal of fostering a more inclusive and
+                    tech-connected society as the world becomes a global
+                    village.
                   </p>
                 </div>
               </div>

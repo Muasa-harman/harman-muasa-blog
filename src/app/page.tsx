@@ -1,22 +1,34 @@
+"use client"
+
 import Link from "next/link";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { Check, Star } from "lucide-react";
 import { Container } from "react-bootstrap";
+import { motion } from "framer-motion"; 
 
 export default function Home() {
   return (
-    <div className="grainy-light min-h-screen bg-[rgb(16,23,42)] text-white flex flex-col justify-between">
+    <motion.div 
+      className="grainy-light min-h-screen bg-[rgb(16,23,42)] text-white flex flex-col justify-between"
+      initial={{ opacity: 0 }} 
+      animate={{ opacity: 1 }} 
+      transition={{ duration: 1 }}
+    >
       {/* Main Content */}
       <main>
         {/* Hero Section */}
-        <section>
+        <motion.section
+          initial={{ y: -50 }} 
+          animate={{ y: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }} 
+        >
           <MaxWidthWrapper className="pb-20 pt-8 bg-[rgb(16,23,42)] text-white lg:grid lg:grid-cols-3 sm:pb-28 lg:gap-x-0 xl:gap-x-8 lg:pt-10 xl:pt-16 lg:pb-40">
             <div className="col-span-2 px-6 lg:px-0">
               <div className="relative mx-auto text-center lg:text-left flex flex-col items-center lg:items-start">
                 <Link href={"/projects"} className="hover:text-green-800 focus:border-green-500">
-                <h3 className="text-3xl font-bold">
-                  Welcome to My Developer's Playground
-                </h3>
+                  <h3 className="text-3xl font-bold">
+                    Welcome to My Developer's Playground
+                  </h3>
                 </Link>
                 <p className="text-white text-xs sm:text-sm">
                   Your go-to hub for all things tech! Dive into a world of
@@ -56,17 +68,24 @@ export default function Home() {
                   whether you're working with a MERN stack, Next.js, or other
                   tools, and the coding considerations involved.
                 </p>
-                <div className="sticky top-20 animate-fadeIn">
-                <Container className="my-8 lg:items-end align-center top-20 animate-fadeIn">
-                  <iframe
-                    width="639"
-                    height="360"
-                    src="https://www.youtube.com/embed/KrlmeH05gJI"
-                    title="introduction to Next.js and my project part 2"
-                    allowFullScreen
-                  />
-                </Container>
-                </div>
+
+                {/* YouTube iframe animation */}
+                <motion.div
+                  className="sticky top-20 animate-fadeIn"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 1, delay: 0.5 }}
+                >
+                  <Container className="my-8 lg:items-end align-center top-20 animate-fadeIn">
+                    <iframe
+                      width="639"
+                      height="360"
+                      src="https://www.youtube.com/embed/KrlmeH05gJI"
+                      title="introduction to Next.js and my project part 2"
+                      allowFullScreen
+                    />
+                  </Container>
+                </motion.div>
 
                 {/* List and Chat Component Side by Side */}
                 <div className="flex flex-col lg:flex-row justify-between w-full mt-4">
@@ -80,21 +99,32 @@ export default function Home() {
                       "Testability",
                       "Maintainability",
                     ].map((item) => (
-                      <li key={item} className="flex gap-1.5 items-center">
+                      <motion.li
+                        key={item}
+                        className="flex gap-1.5 items-center"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 0.5, duration: 1 }}
+                      >
                         <Check className="h-5 w-5 shrink-0 text-green-600" />
                         {item}
-                      </li>
+                      </motion.li>
                     ))}
                   </ul>
 
                   {/* Chat Component */}
-                  <div className="lg:ml-16 w-full lg:w-auto lg:max-w-xs bg-green-100 border border-green-300 p-4 text-center rounded-lg animate-slide-up">
+                  <motion.div
+                    className="lg:ml-16 w-full lg:w-auto lg:max-w-xs bg-green-100 border border-green-300 p-4 text-center rounded-lg animate-slide-up"
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.7, duration: 1 }}
+                  >
                     <p className="text-green-700 font-bold text-lg">
                       Let us chat here!
                       <br />
                       coming Soon
                     </p>
-                  </div>
+                  </motion.div>
                 </div>
               </div>
             </div>
@@ -112,19 +142,27 @@ export default function Home() {
               </div>
             </div>
           </MaxWidthWrapper>
-        </section>
+        </motion.section>
 
         {/* Value Proposition Section */}
-        <section className="grainy-dark bg-[rgb(16,23,42)] text-white">
+        <motion.section
+          className="grainy-dark bg-[rgb(16,23,42)] text-white"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
           <MaxWidthWrapper className="flex flex-col items-center gap-16 sm:gap-32">
             <div className="mx-auto grid max-w-2xl grid-cols-1 px-4 lg:mx-0 lg:max-w-none lg:grid-cols-2 gap-y-16">
               {[
                 `“Data structures and algorithms are the building blocks for development. I can tackle any coding challenge using optimum code to solve problems. Now, I understand the problem before bringing the solution in code."`,
                 `“I've been using TypeScript for months, and it's a game changer. My code is more reliable, catching errors early saves time, and the added type safety gives me confidence.”`,
               ].map((review, index) => (
-                <div
+                <motion.div
                   key={index}
                   className="flex flex-auto flex-col gap-4 lg:pr-8 xl:pr-20"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.5, duration: 1 }}
                 >
                   <div className="flex gap-0.5 mb-2">
                     {[...Array(5)].map((_, i) => (
@@ -137,7 +175,7 @@ export default function Home() {
                   <div className="text-lg leading-8">
                     <p>{review}</p>
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
           </MaxWidthWrapper>
@@ -147,9 +185,10 @@ export default function Home() {
             <h2 className="text-2xl font-semibold text-center">Recent Posts</h2>
             {/* Insert recent posts or reviews here */}
           </div>
-        </section>
+        </motion.section>
       </main>
-    </div>
+    </motion.div>
   );
 }
+
 

@@ -1,7 +1,10 @@
+"use client"
+
 import Link from "next/link";
 import { PasskeyModal } from "@/components/PassKeyModal";
 import { UserForm } from "@/components/forms/UserForm";
 import TimeDisplay from "@/components/TimeDisplay";
+import { motion } from "framer-motion";
 
 const signIn = ({ searchParams }: SearchParamProps) => {
   const isAdmin = searchParams?.admin === "true";
@@ -32,11 +35,25 @@ const signIn = ({ searchParams }: SearchParamProps) => {
       </section>
 
       {/* Right Section */}
-      <div className="side-img flex items-center justify-center bg-[rgb(8,23,42)] text-white">
-        <div className="text-center">
-          <TimeDisplay />
-        </div>
+      <motion.div
+      className="side-img flex items-center justify-center bg-[rgb(8,23,42)] text-white"
+      initial={{ y: -100 }} 
+      animate={{
+        y: [ -100, 0, 100, 0 ], 
+        transition: {
+          y: {
+            duration: 3, 
+            repeat: Infinity, 
+            repeatType: "loop", 
+            ease: "easeInOut", 
+          },
+        },
+      }}
+    >
+      <div className="text-center">
+        <TimeDisplay />
       </div>
+    </motion.div>
     </div>
   );
 };

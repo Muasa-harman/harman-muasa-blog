@@ -5,9 +5,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-
 import { Form } from "@/components/ui/form";
-import { createUser } from "@/lib/actions/user.actions";
 import { UserFormValidation } from "@/lib/validation";
 
 import "react-phone-number-input/style.css";
@@ -37,11 +35,6 @@ export const UserForm = () => {
         phone: values.phone,
       };
 
-      const newUser = await createUser(user);
-
-      if (newUser) {
-        router.push(`/users/${newUser.$id}/register`);
-      }
     } catch (error) {
       console.log(error);
     }
@@ -57,15 +50,6 @@ export const UserForm = () => {
           <p className="text-dark-700">Get started by joining membership is free.</p>
         </section>
 
-        <CustomFormField
-          fieldType={FormFieldType.INPUT}
-          control={form.control}
-          name="name"
-          label="Full name"
-          placeholder="Harman Muasa"
-          iconSrc="/assets/icons/user.svg"
-          iconAlt="user"
-        />
 
         <CustomFormField
           fieldType={FormFieldType.INPUT}
@@ -78,13 +62,14 @@ export const UserForm = () => {
         />
 
         <CustomFormField
-          fieldType={FormFieldType.PHONE_INPUT}
+          fieldType={FormFieldType.INPUT}
           control={form.control}
-          name="phone"
-          label="Phone number"
-          placeholder="(254) 721 456-992"
+          name="password"
+          label="password"
+          placeholder="*********"
+          iconSrc="/assets/icons/user.svg"
+          iconAlt="user"
         />
-
         <SubmitButton isLoading={isLoading}>Get Started</SubmitButton>
       </form>
     </Form>
