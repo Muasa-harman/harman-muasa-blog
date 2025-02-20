@@ -41,7 +41,7 @@ const Navbar = () => {
       {/* Centered Nav Items on Large Screens */}
       <nav className="hidden lg:flex justify-center gap-6 items-center text-white">
         <Link href="/" className="hover:underline">Home</Link>
-        <Link href="/projects" className="hover:underline">Projects</Link>
+        <Link href="/myprojects" className="hover:underline">Projects</Link>
         <Link href="/about" className="hover:underline">Canvas Profile</Link>
       </nav>
 

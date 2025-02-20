@@ -10,7 +10,7 @@ const Profile = ({ imgSrc, className, dark = false, ...props }: PhoneProps) => {
   return (
     <div
       className={cn(
-        'relative pointer-events-none z-50 overflow-hidden',
+        'animate-bounce relative pointer-events-none z-50 overflow-hidden border-4 border-gray-300 rounded-lg shadow-lg bg-white',
         className
       )}
       {...props}>

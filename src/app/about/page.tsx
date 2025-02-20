@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import Image from "next/image";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
@@ -106,11 +107,20 @@ export default function About() {
 
           {/* Right Column - Profile Image (Sticky and Animated) */}
           <section className="relative">
-            <div className="sticky top-20 animate-fadeIn">
+            <div className="sticky top-20 animate-fadeIn flex flex-col items-center space-y-4">
               <Profile
                 className="w-64"
                 imgSrc="https://avatars.githubusercontent.com/u/123101284?s=400&u=a04dfe5638c3e7c0baa461bfe87c5a4c1ef123c2&v=4"
               />
+              <a
+                href="https://drive.google.com/file/d/1tDCgDTGvSAViOD3m1wKvp_Dpd8L5pj-O/view?usp=drive_link"
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 px-6 py-2 bg-green-500 text-white rounded hover:bg-green-600 transition"
+              >
+                Download CV
+              </a>
             </div>
           </section>
         </MaxWidthWrapper>
