@@ -57,7 +57,7 @@ export default function ChatBot() {
     >
       {/* Header */}
       <div className="bg-green-600 text-white p-3 font-bold text-center">
-        Chat with Us!(Coming Soon)
+        Chat with Me!
       </div>
 
       {/* Messages */}
