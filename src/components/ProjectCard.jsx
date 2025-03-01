@@ -20,11 +20,13 @@ const ProjectCard = ({
   }, [images.length]);
 
   return (
-    <div className="group relative w-full border border-teal-400 hover:border-2 h-[300px] overflow-hidden rounded-lg sm:w-[430px] transition-all">
+    <div className="relative w-full h-[200px] overflow-hidden rounded-lg sm:w-[430px] transition-all border border-teal-400 hover:border-2 h-[300px]">
+      {/* group relative w-full border border-teal-400 hover:border-2 h-[300px] overflow-hidden rounded-lg sm:w-[430px] transition-all */}
       <a href={link} target={target} rel={rel}>
         <Image
           src={images[currentImageIndex]}
           alt={`${title} - Image ${currentImageIndex + 1}`}
+          // fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 430px"
           className="object-cover"
         />
